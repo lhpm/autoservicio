@@ -1,0 +1,142 @@
+@charset "utf-8";
+/* TAB PESTAÑAS */
+.tab a{ display:block; float:left; width:135px; height:35px; text-align:center; border:1px solid #666;}
+.clear{ clear:both;}
+#primero{ background-color:white; width:500px; height:300px;}
+#segundo{ background-color:white; width:500px; height:300px;}
+#tercero{ background-color:white; width:500px; height:300px;}
+#cuarto{ background-color:white; width:500px; height:300px;}
+#quinto{ background-color:white; width:500px; height:300px;}
+*{
+	/*font-family:Verdana, Arial, Helvetica, sans-serif;*/
+	/*font-size:13px;*/
+	/*padding:0;*/
+	/*margin:0;*/
+	text-transform:uppercase; /* TEXTO SOLO MAYUSCULAS */
+}
+img{
+	border:none;
+}
+#contenedor{
+	width:1024px;
+	margin:auto;
+	margin-top:20px;
+	border:2px solid #C0C0C0;
+	border-radius: 15px 15px 15px 15px;
+	/*background-color:#F2F2F2;*/
+	padding-bottom:20px;
+}
+small{
+	font-size:10px;
+}
+
+form{
+	border:2px solid #000000;
+	background-color:#FFFFFF;
+	width:900px;
+	margin:auto;
+	margin-bottom:20px;
+}
+
+form p{
+	margin:auto;
+	width:800px;
+	margin-top:5px;
+	margin-bottom:3px;
+}
+form input{
+	border:2px solid #000000;
+	padding:2px;
+	width: 98%;
+}
+
+.fieldset{
+border:1px solid green;
+background:#FFFFFF; /* Color de fondo */
+color:#000; /* Color del texto de todo el contenido */
+border:1px solid #000000;
+border-radius:8px;
+box-shadow:0 0 10px #999;
+}
+.legend{
+padding: 0.2em 0.5em;
+border:1px solid green;
+color:green;
+font-size:90%;
+text-align:center;
+background-color:#FFFFFF;
+font-weight:bold; /* Estilo de la fuente del título */
+color:#000000; /* Color del título */
+}
+
+/* boton flotante */
+.flotante {
+    display:scroll;
+        position:fixed;
+        bottom:320px;
+        right:0px;
+		top:20px;
+}
+
+/* Clase que tendra el tooltip */  
+.lhpmtip{
+    display: inline;
+    position: relative;
+}
+
+.lhpmtip:hover:after{
+    background: #333;
+    background: rgba(0,0,0,.8);
+	border: 2px solid #87cefa;
+    border-radius: 15px;
+    bottom: 27px;
+    color: #fff;
+    content: attr(title);
+    left: 38%;
+    padding: 10px 10px 10px 35px;
+    position: absolute;
+    z-index: 98;
+    width: 220px;
+	text-align:center;
+	font-size:12px;
+	font-weight:bold;
+	box-shadow: 5px 5px 5px #333;
+}
+
+.lhpmtip:hover:before{
+    border: solid;
+    border-color: #333 transparent;
+    border-width: 6px 6px 0 6px;
+    bottom: 20px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    z-index: 99;
+}
+
+/* Tooltips LHPM 2 */
+a.Ntooltip {
+position: relative; /* es la posición normal */
+text-decoration: none !important; /* forzar sin subrayado */
+color:#0080C0 !important; /* forzar color del texto */
+font-weight:bold !important; /* forzar negritas */
+}
+
+a.Ntooltip:hover {
+z-index:999; /* va a estar por encima de todo */
+background-color:#000000; /* DEBE haber un color de fondo */
+}
+
+a.Ntooltip span {
+display: none; /* el elemento va a estar oculto */
+}
+
+a.Ntooltip:hover span {
+display: block; /* se fuerza a mostrar el bloque */
+position: absolute; /* se fuerza a que se ubique en un lugar de la pantalla */
+top:2em; left:2em; /* donde va a estar */
+width:250px; /* el ancho por defecto que va a tener */
+padding:5px; /* la separación entre el contenido y los bordes */
+background-color: #0080C0; /* el color de fondo por defecto */
+color: #FFFFFF; /* el color de los textos por defecto */
+}
